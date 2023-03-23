@@ -86,11 +86,13 @@ const vue_app = Vue.createApp({
                   this.movies[index].dislikes++
             },
             posterClick(index){
+                  let length = this.movies[index].posters.length
+
                   this.movies[index].posterindex++
-                  if(this.movies[index].posterindex >= this.movies[index].posters.length){
+                  if(this.movies[index].posterindex >= length){
                         this.movies[index].posterindex = 0
                   }
-                  console.log(index)
+
             },
             timeText(minutes){
                   let hr = Math.trunc(minutes/60)
