@@ -40,7 +40,63 @@ const vue_app = Vue.createApp({
       }
     },
       methods: {
-            /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
+            getMonthText(dateArray){
+                  if(dateArray[1] == 1){
+                        return "January " + dateArray[2] + ", " + dateArray[0]
+                  }
+                  if(dateArray[1] == 2){
+                        return "February " + dateArray[2] + ", " + dateArray[0]
+                  }
+                  if(dateArray[1] == 3){
+                        return "March " + dateArray[2] + ", " + dateArray[0]
+                  }
+                  if(dateArray[1] == 4){
+                        return "April " + dateArray[2] + ", " + dateArray[0]
+                  }
+                  if(dateArray[1] == 5){
+                        return "May " + dateArray[2] + ", " + dateArray[0]
+                  }
+                  if(dateArray[1] == 6){
+                        return "June " + dateArray[2] + ", " + dateArray[0]
+                  }
+                  if(dateArray[1] == 7){
+                        return "July " + dateArray[2] + ", " + dateArray[0]
+                  }
+                  if(dateArray[1] == 8){
+                        return "August " + dateArray[2] + ", " + dateArray[0]
+                  }
+                  if(dateArray[1] == 9){
+                        return "September " + dateArray[2] + ", " + dateArray[0]
+                  }
+                  if(dateArray[1] == 10){
+                        return "October " + dateArray[2] + ", " + dateArray[0]
+                  }
+                  if(dateArray[1] == 11){
+                        return "November " + dateArray[2] + ", " + dateArray[0]
+                  }
+                  if(dateArray[1] == 12){
+                        return "December " + dateArray[2] + ", " + dateArray[0]
+                  }
+
+            },
+            like(index){
+                  this.movies[index].likes++
+            },
+            dislike(index){
+                  this.movies[index].dislikes++
+            },
+            posterClick(index){
+                  this.movies[index].posterindex++
+                  if(this.movies[index].posterindex >= this.movies[index].posters.length){
+                        this.movies[index].posterindex = 0
+                  }
+                  console.log(index)
+            },
+            timeText(minutes){
+                  let hr = Math.trunc(minutes/60)
+                  let min = minutes - 60*hr
+                  return hr + "h " + min + "m"
+            }
       }
 })
 
