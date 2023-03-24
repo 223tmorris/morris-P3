@@ -68,5 +68,47 @@
             "likes": 812,
             "dislikes": 101,
             "posterindex": 0
+      },
+      {
+            "title": "Gnomeo & Juliet",
+            "iscore": 5.9,
+            "rating": "G",
+            "runtime": 84,
+            "released": [2011, 2, 11],
+            "country": "USA",
+            "posters": ["img/gnomeo.jpg", "img/juliet.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0377981/",
+            "website": "https://www.disneyplus.com/movies/gnomeo-juliet/7Br8fHHSWBhY",
+            "likes": 10487,
+            "dislikes": 3,
+            "posterindex": 0
+      },
+      {
+            "title": "The Wolf of Wall Street",
+            "iscore": 8.2,
+            "rating": "R",
+            "runtime": 180,
+            "released": [2013, 12, 25],
+            "country": "USA",
+            "posters": ["img/wolf1.jpg", "img/wolf2.jpg", "img/wolf3.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0993846/",
+            "website": "https://www.paramountmovies.com/movies/the-wolf-of-wall-street",
+            "likes": 562,
+            "dislikes": 487,
+            "posterindex": 0
+      },
+      {
+            "title": "Sonic the Hedgehog",
+            "iscore": 6.5,
+            "rating": "PG",
+            "runtime": 99,
+            "released": [2020, 2, 14],
+            "country": "USA",
+            "posters": ["img/sonic1.jpg", "img/sonic2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt3794354/",
+            "website": "www.sonicthehedgehog.com",
+            "likes": 637,
+            "dislikes": 221,
+            "posterindex": 0
       }
 ]
