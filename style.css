@@ -6,7 +6,6 @@ body {
     width: 100%;
     overflow: auto;
     background-image: url(img/plane-gary.png);
-    backdrop-filter: grayscale(100%);
 }
 
 /* This stylizes the header area */
@@ -23,7 +22,7 @@ body {
 
 /* This stylizes the main page area */
 .main {
-    background-color: #f2f2f2;
+    background-color: transparent;
     padding: 40px 0;
 }
 
